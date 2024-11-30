@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MAIN DELHI SATTA MATAKA</title>
+  <style>
+    .outerboxmain {
+      width: 415px;
+      border: 1px solid black;
+      height: 604px;
+    }
+
+    .row {
+      display: flex;
+    }
+
+    .headingcell {
+      border: 1px solid black;
+      width: 50px;
+      height: 30px;
+    }
+
+    .maincell {
+      border: 1px solid black;
+      width: 50px;
+      height: 50px;
+      display: flex;
+    }
+
+    .datecell {
+      border: 1px solid black;
+      width: 50px;
+      height: 50px;
+      text-align: center;
+    }
+
+    .datecell>p {
+      margin: 0px;
+      margin-top: 8px;
+      font-weight: bolder;
+      font-size: small;
+    }
+
+    .smallnumbersleft>p {
+      margin: 0px;
+      font-size: small;
+      padding: 2px;
+    }
+
+    .bignumbercell>p {
+      font-size: x-large;
+      margin: 0px;
+      margin-top: 10px;
+      font-weight: bolder;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="outerboxmain">
+    <div class="row">
+      <div class="headingcell"></div>
+      <div class="headingcell"></div>
+      <div class="headingcell"></div>
+      <div class="headingcell"></div>
+      <div class="headingcell"></div>
+      <div class="headingcell"></div>
+      <div class="headingcell"></div>
+      <div class="headingcell"></div>
+    </div>
+
+    <% for(var i=0 ; i < details.length ; i++){%>
+    <div class="row">
+      <div class="datecell">
+        <p><%= details[i].date %></p>
+        
+      </div>
+      <div class="maincell">
+        <div class="smallnumbersleft">
+          <p>
+            <%= details[i].lt1_25 %>
+          </p>
+        </div>
+        <div class="bignumbercell">
+          <p> <%= details[i].left %>&#160;<%= details[i].right %></p>
+          
+        </div>
+        <div class="smallnumbersleft">
+          <p>
+            <%= details[i].rt3_00 %>
+          </p>
+        </div>
+      </div>
+      <div class="maincell">
+        <div class="smallnumbersleft">
+          <p>
+            3 <br />
+            4 <br />
+            6
+          </p>
+        </div>
+        <div class="bignumbercell">
+          <p>32</p>
+        </div>
+        <div class="smallnumbersleft">
+          <p>
+            3 <br />
+            4 <br />
+            6
+          </p>
+        </div>
+      </div>
+      <div class="maincell">
+        <div class="smallnumbersleft">
+          <p>
+            3 <br />
+            4 <br />
+            6
+          </p>
+        </div>
+        <div class="bignumbercell">
+          <p>32</p>
+        </div>
+        <div class="smallnumbersleft">
+          <p>
+            3 <br />
+            4 <br />
+            6
+          </p>
+        </div>
+      </div>
+      <div class="maincell">
+        <div class="smallnumbersleft">
+          <p>
+            3 <br />
+            4 <br />
+            6
+          </p>
+        </div>
+        <div class="bignumbercell">
+          <p>32</p>
+        </div>
+        <div class="smallnumbersleft">
+          <p>
+            3 <br />
+            4 <br />
+            6
+          </p>
+        </div>
+      </div>
+      <div class="maincell">
+        <div class="smallnumbersleft">
+          <p>
+            3 <br />
+            4 <br />
+            6
+          </p>
+        </div>
+        <div class="bignumbercell">
+          <p>32</p>
+        </div>
+        <div class="smallnumbersleft">
+          <p>
+            3 <br />
+            4 <br />
+            6
+          </p>
+        </div>
+      </div>
+      <div class="maincell">
+        <div class="smallnumbersleft">
+          <p>
+            3 <br />
+            4 <br />
+            6
+          </p>
+        </div>
+        <div class="bignumbercell">
+          <p>32</p>
+        </div>
+        <div class="smallnumbersleft">
+          <p>
+            3 <br />
+            4 <br />
+            6
+          </p>
+        </div>
+      </div>
+      <div class="maincell">
+        <div class="smallnumbersleft">
+          <p>
+            3 <br />
+            4 <br />
+            6
+          </p>
+        </div>
+        <div class="bignumbercell">
+          <p>32</p>
+        </div>
+        <div class="smallnumbersleft">
+          <p>
+            3 <br />
+            4 <br />
+            6
+          </p>
+        </div>
+      </div>
+
+    </div>
+    <%}%>
+
+
+  </div>
+</body>
+
+</html>
+
+
+   <!-- <% for(var j=0 ; j < 3 ; j++){%>
+            <span><%= value1[i].left[j]%></span><br>
+
+            <%}%> -->
+<!-- <% for(var j=0 ; j < 3 ; j++){%>
+            <span><%= value1[i].right[j]%></span><br>
+            <%}%> -->
+
+
+            
+                                
+            <% if(details[0].lt1_25 == ""){ %>
+              ***-
+              <% } else{ %> 
+                <%= details[0].lt1_25%>-
+            <% } %> 
+            <% if(details[0].left == ""){ %>
+              *
+              <% } else{ %> 
+                <%= details[0].left%>
+            <% } %>
+            <% if(details[0].right == ""){ %>
+             *-
+             <% } else{ %> 
+              <%= details[0].right%>-
+            <% } %> 
+            <% if(details[0].rt3_00 == ""){ %>
+              ***
+              <% } else{ %>
+                <%= details[0].rt3_00%>
+
+            <% } %>

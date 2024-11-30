@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>chennaisattamatka</title>
+
+    <style>
+        .body {
+
+            height: auto;
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            font-weight: 800;
+            color: #333;
+
+        }
+
+        .container {
+            width: auto;
+            background-color: white;
+            min-height: 0px !important;
+            height: auto !important;
+            padding: 0px;
+            padding-right: 60px;
+            padding-left: 60px;
+            margin-top: -1%;
+        }
+
+        .s1 {
+
+            background-color: #f4511e;
+            color: white;
+            border: 1px solid skyblue;
+        }
+        .s2:hover {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .s3 {
+            background-color: black;
+            color: white;
+            height: 40px;
+            margin-top: -27px;
+        }
+
+        .s4 {
+            border: 1px solid skyblue;
+            height: 250px;
+            background-color: white;
+        }
+
+        .s5 {
+            width: 100%;
+
+        }
+
+        .s6 {
+            text-align: center;
+        }
+
+        .s7 {
+            background-color: #337ab7;
+            height: 50px;
+            margin-top: -2%;
+            padding: 1%;
+            font-size: 24px;
+            color: white;
+            margin-top: 0px;
+            line-height: 1.1;
+
+        }
+
+        .s8 {
+            border: 1px solid blue;
+            height: auto;
+            background-color: #f2f2f2;
+        }
+
+        .s9 {
+            border: 1px solid white;
+            height: 500px;
+            background-color: white;
+        }
+
+        .s10 {
+            background-color: #292f38;
+            height: 1.5em;
+            text-align: center;
+            color: white;
+            padding: 0.5em;
+        }
+    </style>
+
+    <style>
+        .outerboxmain {
+            width: 415px;
+            border: 1px solid black;
+            height: 604px;
+            margin: 10px;
+        }
+
+        .row {
+            display: flex;
+        }
+
+        .headingcell {
+            border: 1px solid black;
+            width: 50px;
+            height: 30px;
+        }
+
+        .maincell {
+            border: 1px solid black;
+            width: 50px;
+            height: 80px;
+            display: flex;
+            padding: 10px;
+            font-weight: 800;
+        }
+
+        .datecell {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 20px;
+            padding: 0.2em;
+            border: 1px solid black;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+            color: black;
+            padding-right: 0.5em;
+            font-weight: 800;
+            font-style: italic;
+            margin-right: 10px;
+            padding-top: 15px;
+        }
+
+        .datecell>p {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            font-size: 16px;
+            margin: 0px;
+            font-weight: 400;
+            padding-right: 15px;
+            display: block;
+            width: 80px;
+            font-weight: bolder;
+            padding-top: 10px;
+
+        }
+
+        .smallnumbersleft>p {
+            margin: 0px;
+            font-size: 15px;
+            padding: 2px;
+        }
+
+        .bignumbercell>p {
+            font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+            margin: 0px;
+            margin-top: 10px;
+            font-size: 40px;
+            font-weight: bolder;
+        }
+
+        .mainchartbox {
+            width: max-content;
+            height: max-content;
+            /* padding: 20px; */
+            border: 1px solid black;
+            display: flex;
+            background-color: hotpink;
+        }
+
+        .starssection {
+            display: block;
+            /* background-color: rgb(0, 225, 255); */
+        }
+    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <div class="body">
+        <div class="container" style="background-color:skyblue">
+            <div class="s1">
+                <div class="s2">
+                    <h2 style="font-size: 30px;font-weight: 900;font-family: initial;margin:0px; text-align: center;">
+                        ChennaiSattaMatka.com</h2>
+                    <p style="    width: 100%;
+                    text-align: center;
+                    font-size: 20px;
+                    margin-bottom: 0px;
+                    margin: 10px;">सबसे तेज ➣ सबसे आगे</p>
+                </div>
+            </div>
+            <div class="s3">
+                <h4>
+                    <marquee style="margin-top: 10px;"> Chennai सट्टा मटका की <b> Original </b> वेबसाईट </marquee>
+                </h4>
+            </div>
+            <div class="s4">
+
+            </div>
+            <div class="s5">
+
+                <div class="s6">
+                    <div class="s7">
+                        <h3 style="margin-top: 10px;">Kalyan Panel Chart</h3>
+
+                    </div>
+
+
+
+                </div>
+            </div>
+            <div class="s8">
+                <div class="outerboxmain" style="border: none;">
+
+                    <% for(var a=0; a < kalyan.length ; a+=7){%>
+                    <div class="row" style="border: none;">
+                        <div class="datecell" style="border: none; font-style: italic;">
+
+                            <p><%= kalyan[a].date %></p>
+
+                        </div>
+                        <% for(var i=a,h=0 ; h < 7 && i < kalyan.length ; i++,h++){%>
+                        <div class="maincell" style="border: none;">
+                            <div class="smallnumbersleft" style="border: none;">
+                                <p>
+                                    <% for(var j=0 ; j < 3 ; j++){%>
+                                    <% if(kalyan[i].value1 == null){ %>
+                                    <span style="color: red;">*</span><br>
+                                    <% } else{ %>
+                                        <% if(abc[i].red == -1 ){ %>
+
+                                    <span style="color: red;"><%= kalyan[i].value1[j]%></span><br>
+                                    <% } else{ %>
+                                        <span><%= kalyan[i].value1[j]%></span><br>
+                                    <% } %>
+                                    <% } %>
+                                    <%}%>
+                      </p>
+                    </div>
+                    <div class="bignumbercell" >
+                        <% if(kalyan[i].left_no == "" || kalyan[i].right_no == "" || kalyan[i].left_no == null || kalyan[i].right_no == null  ){ %>
+                                    <% if((kalyan[i].left_no == "" || kalyan[i].left_no == null) &&( kalyan[i].right_no == "" || kalyan[i].right_no == null)){ %>
+                                <p style="font-size: large; color: red;">*&#160;*
+                                </P>
+                    
+                                <%} else if( kalyan[i].right_no == "" || kalyan[i].right_no == null){ %>
+                                <p style="font-size: large; "><%=kalyan[i].left_no%>&#160;<span
+                                        style="color: red;">*</span>
+                                </P>
+                    
+                                <% }else{ %>
+                    
+                                <p style="font-size: large; "><span
+                                        style="color: red;">*</span>&#160;<%=kalyan[i].right_no%>
+                                </P>
+                                <% } %>
+                    
+                                <% } else{ %>
+                                <% if(abc[i].red == -1 ){ %>
+                                <p style="font-size: large; color: red;">
+                                    <%= kalyan[i].left_no %>&#160;<%= kalyan[i].right_no %>
+                                </P>
+                                <% } else{ %>
+                                <p style="font-size: large; "> <%= kalyan[i].left_no %>&#160;<%= kalyan[i].right_no %>
+                                </P>
+                                <% } %>
+                                <% } %>
+                            </div>
+                            <div class="smallnumbersleft">
+                                <p>
+                                    <% for(var j=0 ; j < 3 ; j++){%>
+                                    <% if( kalyan[i].value2[j] == null ||  kalyan[i].value2[j] == '' ||kalyan[i].value2[j] =="*" ){ %>
+                                    <span style="color:#ff0000">*</span><br>
+                                    <% } else{ %>
+                                        <% if(abc[i].red == -1 ){ %>
+                                        <span style="color: red;"><%= kalyan[i].value2[j]%></span><br>
+                                    <% } else{ %>
+                                        <span ><%= kalyan[i].value2[j]%></span><br>
+                                      <% } %>
+                                    <% } %>
+                                    <%}%>
+                      </p>
+                      
+                    </div>
+               
+                    
+                  </div>
+                  <%}%>
+                            </div>
+                            <%}%>
+            
+            
+              </div>
+
+            </div>
+            <div class="s9">
+
+
+            </div>
+            <div class="s10">
+                Copyright @ <a style="color: yellow;" href="#"> </a>
+            </div>
+
+
+        </div>
+
+    </div>
+</body>
+
+</html>
