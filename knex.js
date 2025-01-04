@@ -3,9 +3,9 @@ const knex = require('knex')({
   client: 'mysql',
   connection: {
     host: 'localhost',
-    user: 'maindel_matkaDelhi',
-    password: 'Passmein^22',
-    database: 'maindel_mainDelhi',
+    user: 'root',
+    password: '',
+    database: 'maindel_maindelhi',
     typeCast: function (field, next) {
       if (field.type == 'DATE') {
         return moment(field.string()).format('YYYY-MM-DD ');
